@@ -1,0 +1,19 @@
+Source: screed
+Priority: optional
+Maintainer: Michael R. Crusoe <michael.crusoe@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), dh-python, python (>= 2.4) | python-all | python-dev | python-all-dev, python-sphinx
+Standards-Version: 3.9.5
+Section: libs
+Homepage: https://screed.readthedocs.org
+Vcs-Git: https://github.com/ged-lab/screed.git
+Vcs-Browser: https://github.com/ged-lab/screed
+X-Python-Version: >= 2.4
+
+Package: python-screed
+Section: python
+Architecture: any
+Depends: ${misc:Depends}, ${sphinxdoc:Depends}
+Description: short nucleotide read sequence utils in Python.
+ Screed parses FASTA and FASTQ files, generates databases, and lets you query
+ these databases. Values such as sequence name, sequence description, sequence
+ quality, and the sequence itself can be retrieved from these databases.
